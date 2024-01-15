@@ -13,7 +13,7 @@ int full_check(const binary_tree_t *tree)
 	if (tree != NULL)
 	{
 		if ((tree->left != NULL && tree->right == NULL) ||
-			tree->left == NULL && tree->right != NULL ||
+			(tree->left == NULL && tree->right != NULL) ||
 			full_check(tree->left) == 0 ||
 			full_check(tree->right) == 0)
 
