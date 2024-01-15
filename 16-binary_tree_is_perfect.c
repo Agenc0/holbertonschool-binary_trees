@@ -15,6 +15,8 @@ int is_leaf(const binary_tree_t *node)
 /**
  * get_depth - measures depth of a node
  * @node: node to measure depth of
+ *
+ * Return: depth of node
  */
 
 size_t get_depth(const binary_tree_t *node)
