@@ -19,7 +19,7 @@ int is_leaf(const binary_tree_t *node)
 
 size_t get_depth(const binary_tree_t *node)
 {
-	return (node->parent != NULL ? 1 + depth(node->parent) : 0)
+	return (node->parent != NULL ? 1 + get_depth(node->parent) : 0);
 }
 
 /**
